@@ -6,16 +6,6 @@
     "build": "webpack --mode development --config webpack/webpack.config.js",
     "start": "webpack-dev-server --open"
   },
-  "babel": {
-    "presets": [
-      "@babel/preset-env",
-      "@babel/preset-react"
-    ],
-    "plugins": [
-      "@babel/plugin-transform-runtime",
-      "@babel/plugin-transform-react-jsx"
-    ]
-  },
   "dependencies": {
     "lodash": "4.17.20",
     "react": "16.13.1",

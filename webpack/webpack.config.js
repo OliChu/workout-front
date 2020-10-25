@@ -1,7 +1,7 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const isProduction = process.env.NODE_ENV === 'production'
+// const isProduction = process.env.NODE_ENV === 'production'
 
 module.exports = {
   entry: path.resolve(__dirname, '../src/index.js'),
@@ -10,6 +10,7 @@ module.exports = {
     filename: 'app_bundle.js',
   },
   // watch: !isProduction,
+  mode: "development",
   module: {
     rules: [
       { 
@@ -30,7 +31,6 @@ module.exports = {
   ],
   devServer: {
     contentBase: path.join(__dirname, '../dist'),
-    // compress: true,
     port: 8080,
   }
 }

@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "webpack --mode development --config config/webpack.config.js"
+    "build": "webpack --mode development --config webpack/webpack.config.js"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
   },
   "dependencies": {
     "lodash": "4.17.20",

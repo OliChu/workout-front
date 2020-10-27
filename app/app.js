@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { HashRouter as Router, Route, Switch } from 'react-router-dom'
 import HomePage from './home'
 import WorkoutsPage from './workouts'
 import Error404 from './errors'
@@ -10,10 +10,10 @@ const App = () => {
   return (
     <Router>
       <Switch>
-        <Route strict path={HOME}>
+        <Route path={HOME}>
           <HomePage />
         </Route>
-        <Route strict path={WORKOUTS}>
+        <Route path={WORKOUTS}>
           <WorkoutsPage />
         </Route>
         <Route>

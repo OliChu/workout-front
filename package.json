@@ -13,7 +13,7 @@
   },
   "lint-staged": {
     "*.js": [
-      "eslint --config ./.eslintrc.js --fix "
+      "eslint --config ./.eslintrc.js --fix"
     ]
   },
   "dependencies": {
